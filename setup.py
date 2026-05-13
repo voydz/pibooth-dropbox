@@ -26,16 +26,15 @@ def main():
             'Intended Audience :: End Users/Desktop',
             'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
             'Operating System :: POSIX :: Linux',
-            'Programming Language :: Python :: 3.6',
-            'Programming Language :: Python :: 3.7',
-            'Programming Language :: Python :: 3.8',
-            'Programming Language :: Python :: 3.9',
+            'Programming Language :: Python :: 3.11',
+            'Programming Language :: Python :: 3.12',
+            'Programming Language :: Python :: 3.13',
             'Natural Language :: English',
             'Topic :: Multimedia :: Graphics :: Capture :: Digital Camera',
         ],
         author="Martin Mhilcher",
-        url="https://github.com/pibooth/pibooth-dropbox",
-        download_url="https://github.com/pibooth/pibooth-dropbox/archive/{}.tar.gz".format(plugin.__version__),
+        url="https://github.com/voydz/pibooth-dropbox",
+        download_url="https://github.com/voydz/pibooth-dropbox/archive/{}.tar.gz".format(plugin.__version__),
         license='GPLv3',
         platforms=['unix', 'linux'],
         keywords=[
@@ -44,10 +43,11 @@ def main():
             'photobooth'
         ],
         packages=['pibooth_dropbox'],
-        python_requires=">=3.6",
+        python_requires=">=3.11",
         install_requires=[
-            'pibooth>=2.0.0',
-            'dropbox>=11.29.0'
+            'pibooth>=2.0.8',
+            'dropbox>=11.29.0',
+            'requests>=2.28.0',
         ],
         zip_safe=False,  # Don't install the lib as an .egg zipfile
         entry_points={'pibooth': ["pibooth_dropbox = pibooth_dropbox.plugin"]},

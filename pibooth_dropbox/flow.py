@@ -1,10 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import json
-try:
-    import urlparse
-except ImportError:
-    import urllib.parse as urlparse
+from urllib.parse import parse_qsl, urlparse
 
 import webbrowser
 import wsgiref.simple_server
@@ -121,8 +118,8 @@ class InstalledAppFlow(object):
         :param uri: The full redirect URL back to the client.
         :param state: The state parameter from the authorization request.
         """
-        query = urlparse.urlparse(uri).query
-        params = dict(urlparse.parse_qsl(query))
+        query = urlparse(uri).query
+        params = dict(parse_qsl(query))
 
         if state and params.get('state', None) != state:
             raise ValueError("State are not matching")

@@ -10,12 +10,22 @@ pibooth-dropbox
 Its permits to upload the pictures to a `Dropbox`_ folder. It requires an
 internet connection.
 
+Requirements
+------------
+
+* Python **3.11+**
+* `pibooth`_ **2.0.8+** (venv recommended on Debian trixie)
+
 Install
 -------
 
 ::
 
-    $ pip3 install pibooth-dropbox
+    $ python3 -m pip install pibooth-dropbox
+
+Or from this fork::
+
+    $ python3 -m pip install git+https://github.com/voydz/pibooth-dropbox.git
 
 Configuration
 -------------
@@ -81,13 +91,13 @@ by an other application than the one defined in Dropbox.com.
 
 .. --- Links ------------------------------------------------------------------
 
-.. _`pibooth`: https://pypi.org/project/pibooth
+.. _`pibooth`: https://github.com/voydz/pibooth
 
 .. _`Dropbox`: https://www.dropbox.com
 
-.. |PythonVersions| image:: https://img.shields.io/badge/python-3.6+-red.svg
+.. |PythonVersions| image:: https://img.shields.io/badge/python-3.11+-blue.svg
    :target: https://www.python.org/downloads
-   :alt: Python 3.6+
+   :alt: Python 3.11+
 
 .. |PypiPackage| image:: https://badge.fury.io/py/pibooth-dropbox.svg
    :target: https://pypi.org/project/pibooth-dropbox
@@ -99,22 +109,22 @@ by an other application than the one defined in Dropbox.com.
 
 .. --- Tuto -------------------------------------------------------------------
 
-.. |step1| image:: https://github.com/pibooth/pibooth-dropbox/blob/master/docs/images/step1_create_button.png?raw=true
+.. |step1| image:: https://github.com/voydz/pibooth-dropbox/blob/master/docs/images/step1_create_button.png?raw=true
    :width: 80 %
    :alt: step1_create_button
 
-.. |step2| image:: https://github.com/pibooth/pibooth-dropbox/blob/master/docs/images/step2_project_name.png?raw=true
+.. |step2| image:: https://github.com/voydz/pibooth-dropbox/blob/master/docs/images/step2_project_name.png?raw=true
    :width: 80 %
    :alt: step2_project_name
 
-.. |step3| image:: https://github.com/pibooth/pibooth-dropbox/blob/master/docs/images/step3_app_key.png?raw=true
+.. |step3| image:: https://github.com/voydz/pibooth-dropbox/blob/master/docs/images/step3_app_key.png?raw=true
    :width: 80 %
    :alt: step3_app_key
 
-.. |step4| image:: https://github.com/pibooth/pibooth-dropbox/blob/master/docs/images/step4_redirect_uri.png?raw=true
+.. |step4| image:: https://github.com/voydz/pibooth-dropbox/blob/master/docs/images/step4_redirect_uri.png?raw=true
    :width: 80 %
    :alt: step4_redirect_uri
 
-.. |step5| image:: https://github.com/pibooth/pibooth-dropbox/blob/master/docs/images/step5_permissions.png?raw=true
+.. |step5| image:: https://github.com/voydz/pibooth-dropbox/blob/master/docs/images/step5_permissions.png?raw=true
    :width: 80 %
    :alt: step5_permissions
