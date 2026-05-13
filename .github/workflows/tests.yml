@@ -26,7 +26,7 @@ jobs:
           pip install -U pip
           pip install "git+https://github.com/voydz/pibooth.git@master#egg=pibooth" || pip install "pibooth>=2.0.8"
       - name: Install plugin
-        run: pip install -e .
+        run: pip install --no-build-isolation -e .
       - name: Import smoke test
         run: |
           python -c "import pibooth_dropbox; import pibooth_dropbox.flow; import pibooth_dropbox.plugin; print('ok', pibooth_dropbox.__version__)"
